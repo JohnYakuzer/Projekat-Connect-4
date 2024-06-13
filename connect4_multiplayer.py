@@ -146,7 +146,7 @@ while not game_over:
             print_board(board)
             draw_board(board)
 
-            # Provjera da li se partija zavrsila nerijeseno
+            # Provjera da li je nerijeseno
             if not game_over and is_board_full(board):
                 pygame.draw.rect(screen, BLACK, (0, 0, width, SQUARESIZE))
                 label = myfont.render("DRAW!", 1, WHITE)
