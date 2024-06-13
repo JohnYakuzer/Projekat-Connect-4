@@ -13,7 +13,7 @@ def show_authors():
     bg_label.image = bg_image  # keep a reference to prevent garbage collection
     bg_label.place(relwidth=1, relheight=1)
 
-    authors_label = tk.Label(authors_window, text="Đorđe Đuričić\nRedžep Đerekarac\nStefan Đurišić\nMarija Perović", font=("Helvetica", 32), bg='white')
+    authors_label = tk.Label(authors_window, text="Đorđe Đuričić\nRedžep Đerekarac\nStefan Đurišić\nMarija Perović", font=("Helvetica", 32), bg='white', highlightthickness=2, highlightbackground='black', highlightcolor='black')
     authors_label.pack(pady=20, padx=20)
 
 def start_game():
@@ -41,10 +41,10 @@ def start_game():
         subprocess.run(["python", "connect4.py"])
         post_game_options()
 
-    single_button = tk.Button(game_window, text="Single Player", command=single_player, font=("Arial", 14), bg='green', padx=20, pady=10)
+    single_button = tk.Button(game_window, text="Single Player", command=single_player, font=("Arial", 14), padx=20, pady=10)
     single_button.grid(row=0, column=0, sticky="nsew", padx=10, pady=10)
 
-    multi_button = tk.Button(game_window, text="Multiplayer", command=multiplayer, font=("Arial", 14), bg='green', padx=20, pady=10)
+    multi_button = tk.Button(game_window, text="Multiplayer", command=multiplayer, font=("Arial", 14), padx=20, pady=10)
     multi_button.grid(row=1, column=0, sticky="nsew", padx=10, pady=10)
 
 def post_game_options():
@@ -90,17 +90,17 @@ bg_label.image = bg_image  # keep a reference to prevent garbage collection
 bg_label.place(relwidth=1, relheight=1)
 
 # Title label
-title_label = tk.Label(root, text="Connect 4", font=("Comic Sans MS", 24, "bold"), fg='red', bg='white')
+title_label = tk.Label(root, text="Connect 4", font=("ArcadeClassic", 24, "bold"), fg='red', bg='white', highlightthickness=2, highlightbackground='black', highlightcolor='black')
 title_label.pack(pady=20)
 
 # Buttons
-start_button = tk.Button(root, text="Pokreni igru", command=start_game, font=("Arial", 16), bg='green', padx=20, pady=10)
+start_button = tk.Button(root, text="Pokreni igru", command=start_game, font=("Arial", 16), bg='blue', fg='white', padx=20, pady=10)
 start_button.pack(pady=10)
 
-authors_button = tk.Button(root, text="Autori", command=show_authors, font=("Arial", 16), bg='purple', padx=20, pady=10)
+authors_button = tk.Button(root, text="Autori", command=show_authors, font=("Arial", 16), bg='indigo', fg='white', padx=20, pady=10)
 authors_button.pack(pady=10)
 
-exit_button = tk.Button(root, text="Izlaz", command=exit_program, font=("Arial", 16), bg='blue', padx=20, pady=10)
+exit_button = tk.Button(root, text="Izlaz", command=exit_program, font=("Arial", 16), bg='brown', padx=20, pady=10)
 exit_button.pack(pady=10)
 
 root.mainloop()
