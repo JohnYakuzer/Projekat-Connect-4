@@ -1,5 +1,5 @@
 Ovo je simple shell script fajl za linux build.
-Da bi ste pokrenuli program unesite sljedecu komandu u terminal emulatoru:
+Da biste pokrenuli program unesite sljedecu komandu u terminal emulatoru:
 chmod +x connect4-start.sh
 Ovo komanda ce promjeniti da shell scripta bude executable.
 
