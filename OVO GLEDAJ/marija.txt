@@ -1,0 +1,20 @@
+REQ-001: Prikaz glavnog menija
+
+    Opis: Aplikacija treba prikazati glavni meni sa opcijama za pokretanje igre, prikaz autora i izlaz.
+    Povezani Modul/Funkcija: root, start_game, show_authors, exit_program
+    Izvorni Fajl: main_menu.py
+    MAX PW: 5
+    Total PW: 3
+
+REQ-002: Pokretanje igre
+
+    Opis: Korisnik može pokrenuti igru sa glavnog menija, birajući između singleplayer i multiplayer modova.
+    Povezani Modul/Funkcija: start_game, single_player, multiplayer
+    Izvorni Fajl: main_menu.py, game.py
+    MAX PW: 5
+    Total PW: 4
+
+    NISU OVI TACNI GLEDAJ TABELU I ISPRAVI MARIJA!!!!!
+    OVO TI JE SAMO Template!!!
+
+    I PROMIJENI IMENA SLIKA DA NE BUDE AUTOIMUNA BOLEST MIRKO HAHAHAHHA
