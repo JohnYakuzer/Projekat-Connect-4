@@ -15,6 +15,7 @@ Igra za sada sadrzi samo Linux native build.
 >Lijevi klik misa, i samo pomjeranje misa po X osi.
 
 *3. Demo*
+![SLIKA](connect4.png)
 
 *4. Minimum System Requirements*
 >Ova igra zathjeva sljdedece programe i biblioteke da budu instalirani da bi radila:
@@ -34,6 +35,15 @@ Igra za sada sadrzi samo Linux native build.
  - *CPU*: AMD Ryzen™ 9950X
  - *GPU*: Nvidia Geforce RTX 4090
  - *Disk Space*: 1 TB SSD
+
+*5. Copyright*
+>Nema ga ovo je free open source program
+
+*6.Autori*
+- Stefan Djurisic
+- Redzep Djerekarac
+- Djordje Djuricic
+- Marija Perovic
 
 
 
