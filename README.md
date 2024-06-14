@@ -15,7 +15,9 @@ Igra za sada sadrzi samo Linux native build.
 >Lijevi klik misa, i samo pomjeranje misa po X osi.
 
 *3. Demo*
-![SLIKA](connect4.png)
+- Main menu
+![SLIKA](main_meni.png)
+- Empty Board
 
 *4. Minimum System Requirements*
 >Ova igra zathjeva sljdedece programe i biblioteke da budu instalirani da bi radila:
