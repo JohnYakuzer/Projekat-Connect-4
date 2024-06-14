@@ -24,8 +24,8 @@ Igra za sada sadrzi samo Linux native build.
 - tkinter
 
 >*MINIMUM SYSTEM REQUIREMENTS*
--*RAM*: 64 mb
--*CPU*: MOS 6510, 1 mHz or better
+- *RAM*: 64 kb or greater
+- *CPU*: MOS 6510, 1 mHz or better
 -
 
 
