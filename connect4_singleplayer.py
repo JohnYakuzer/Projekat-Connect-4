@@ -285,7 +285,8 @@ while not game_over:
 
 			if winning_move(board, AI_PIECE):
 				label = myfont.render("AI WINS!", 1, YELLOW)
-				screen.blit(label, (40,10))
+				label_rect = label.get_rect(center=(width/2, SQUARESIZE//2))
+				screen.blit(label, label_rect)
 				game_over = True
 
 			print_board(board)
@@ -297,7 +298,8 @@ while not game_over:
 	# Provjera za draw
 	if not game_over and is_board_full(board):
 		label = myfont.render("DRAW!", 1, WHITE)
-		screen.blit(label, (40,10))
+		label_rect = label.get_rect(center=(width/2, SQUARESIZE//2))
+		screen.blit(label, label_rect)
 		game_over = True
 
 	if game_over:
