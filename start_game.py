@@ -45,11 +45,11 @@ def start_game():
         post_game_options()
 
     # Dugme za pokretanje igre sa AI-om
-    single_button = tk.Button(game_window, text="Jedan igrač", command=single_player, font=("Arial", 14), padx=20, pady=10, bd=2, relief=tk.GROOVE)
+    single_button = tk.Button(game_window, text="Singleplayer", command=single_player, font=("Arial", 14), padx=20, pady=10, bd=2, relief=tk.GROOVE)
     single_button.grid(row=0, column=0, sticky="nsew", padx=10, pady=10)
 
     # Dugme za pokretanje igre sa dva igrača
-    multi_button = tk.Button(game_window, text="Više igrača", command=multiplayer, font=("Arial", 14), padx=20, pady=10, bd=2, relief=tk.GROOVE)
+    multi_button = tk.Button(game_window, text="Multiplayer", command=multiplayer, font=("Arial", 14), padx=20, pady=10, bd=2, relief=tk.GROOVE)
     multi_button.grid(row=1, column=0, sticky="nsew", padx=10, pady=10)
 
 def post_game_options():
