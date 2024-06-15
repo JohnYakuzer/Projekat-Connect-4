@@ -14,7 +14,7 @@ Igra za sada sadrzi samo Linux native build.
 >Lijevi klik misa, i samo pomjeranje misa po X osi.
 
 
-*3. Minimum System Requirements*
+*3. Minimum System Requirements i Aditional Software*
 >Ova igra zathjeva sljdedece programe i biblioteke da budu instalirani da bi radila:
 - python3
 - pygame
@@ -31,7 +31,7 @@ Igra za sada sadrzi samo Linux native build.
  - *RAM*: 128 GB RAM
  - *CPU*: AMD Ryzen™ 9950X
  - *GPU*: Nvidia Geforce RTX 4090
- - *Disk Space*: 1 TB SSD
+ - *Disk Space*: 2 TB SSD
 
 *4. Copyright*
 >Nema ga ovo je free open source program
