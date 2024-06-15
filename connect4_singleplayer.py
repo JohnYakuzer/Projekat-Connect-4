@@ -3,7 +3,7 @@ import random
 import pygame
 import sys
 import math
-#Inputanje biblioteka
+#Importanje biblioteka
 
 BLUE = (0,0,255)
 BLACK = (0,0,0)
