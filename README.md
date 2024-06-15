@@ -9,7 +9,7 @@
 --------------
 *1. O programu*
 >Program omogucava igracima igru, veoma poznate video igre Connect 4. Igru je moguce igrati u **singleplayer** (vs CPU)  ili **multiplayer** (vs Player). Program sadrzi informacije o autorima i mogucnost replayanja rundi sa selekcijom play optiona *(single ili multiplayer)*. Igra se moze zavrsiti pobjedom jednog od dva igraca (ili CPU-a), ili remijem.
-Igra za sada sadrzi Windows Build i Linux Build.
+Igra sadrzi Windows Build i Linux Build.
 
 *2. Instalacija i pokretanje*
 >U datom repository-ju se nalazi Source Code za program kao i exe i shell script fajl. Za instalaciju treba treba samo da se extractuje Windows Build, i dati content datog foldera da se past-a u main Connect 4 folder. Isto je i za Linux Build, samo bez extractovanja. Oba builda imaju dodatni help fajl unutar njihovih foldera.
