@@ -35,13 +35,13 @@ def start_game():
     def single_player():
         # Funkcija za pokretanje igre sa AI-om
         game_window.destroy()
-        subprocess.run(["python", "connect4_with_ai.py"])
+        subprocess.run(["python", "connect4_singleplayer.py"])
         post_game_options()
 
     def multiplayer():
         # Funkcija za pokretanje igre sa dva igrača
         game_window.destroy()
-        subprocess.run(["python", "connect4.py"])
+        subprocess.run(["python", "connect4_multiplayer.py"])
         post_game_options()
 
     # Dugme za pokretanje igre sa AI-om
