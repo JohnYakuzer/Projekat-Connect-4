@@ -125,7 +125,7 @@ while not game_over:
                     drop_piece(board, row, col, 1)
 
                     if winning_move(board, 1):
-                        label = myfont.render("PLAYER 1 WINS", 1, RED)
+                        label = myfont.render("PLAYER 1 WINS!", 1, RED)
                         screen.blit(label, (40, 10))
                         game_over = True
 
