@@ -1,7 +1,0 @@
-Ovo je simple shell script fajl za linux build.
-Da biste pokrenuli program unesite sljedecu komandu u terminal emulatoru:
-chmod +x connect4-start.sh
-Ovo komanda ce promjeniti da shell scripta bude executable.
-
-Windows Build verzija isto radi preko translation layera. Proton GE custom, ili Proton 9.5. 
-Nisu potrebne dodatne konfiguracije.
