@@ -10,9 +10,11 @@ BLACK = (0,0,0)
 RED = (255,0,0)
 YELLOW = (255,255,0)
 WHITE=(255,255,255)
+#Definisanje boja
 
 ROW_COUNT = 6
 COLUMN_COUNT = 7
+#Definisanje velicine kolone i reda
 
 PLAYER = 0
 AI = 1
@@ -22,6 +24,7 @@ PLAYER_PIECE = 1
 AI_PIECE = 2
 
 WINDOW_LENGTH = 4
+#Duzina prozora
 
 def create_board():
 	board = np.zeros((ROW_COUNT,COLUMN_COUNT))
@@ -42,13 +45,13 @@ def print_board(board):
 	print(np.flip(board, 0))
 
 def winning_move(board, piece):
-	# Provjera horizontalne lokacije ako player wina
+	# Provjera horizontalne lokacije ako player 1 wina
 	for c in range(COLUMN_COUNT-3):
 		for r in range(ROW_COUNT):
 			if board[r][c] == piece and board[r][c+1] == piece and board[r][c+2] == piece and board[r][c+3] == piece:
 				return True
 
-	# Checkaj vertikalnu poziciju ako player wina
+	# Provjera vertikalne pozicije ako player 1 wina
 	for c in range(COLUMN_COUNT):
 		for r in range(ROW_COUNT-3):
 			if board[r][c] == piece and board[r+1][c] == piece and board[r+2][c] == piece and board[r+3][c] == piece:
@@ -60,7 +63,7 @@ def winning_move(board, piece):
 			if board[r][c] == piece and board[r+1][c+1] == piece and board[r+2][c+2] == piece and board[r+3][c+3] == piece:
 				return True
 
-	# Check negatively sloped diaganols
+	# Provjera negativno sloped dijagonala
 	for c in range(COLUMN_COUNT-3):
 		for r in range(3, ROW_COUNT):
 			if board[r][c] == piece and board[r-1][c+1] == piece and board[r-2][c+2] == piece and board[r-3][c+3] == piece:
@@ -106,7 +109,7 @@ def score_position(board, piece):
 			window = col_array[r:r+WINDOW_LENGTH]
 			score += evaluate_window(window, piece)
 
-	## Score posiive sloped diagonal
+	## score_pozitivna_sloped_diagonala
 	for r in range(ROW_COUNT-3):
 		for c in range(COLUMN_COUNT-3):
 			window = [board[r+i][c+i] for i in range(WINDOW_LENGTH)]
@@ -131,7 +134,7 @@ def minimax(board, depth, alpha, beta, maximizingPlayer):
 				return (None, 100000000000000)
 			elif winning_move(board, PLAYER_PIECE):
 				return (None, -10000000000000)
-			else: # Game is over, no more valid moves
+			else: # Game is over, nema vise validnih pokreta
 				return (None, 0)
 		else: # Depth is zero
 			return (None, score_position(board, AI_PIECE))
@@ -173,7 +176,7 @@ def get_valid_locations(board):
 		if is_valid_location(board, col):
 			valid_locations.append(col)
 	return valid_locations
-
+#AI izbor pick
 def pick_best_move(board, piece):
 
 	valid_locations = get_valid_locations(board)
@@ -189,7 +192,7 @@ def pick_best_move(board, piece):
 			best_col = col
 
 	return best_col
-
+#Crtanje table
 def draw_board(board):
 	for c in range(COLUMN_COUNT):
 		for r in range(ROW_COUNT):
@@ -260,7 +263,7 @@ while not game_over:
 					drop_piece(board, row, col, PLAYER_PIECE)
 
 					if winning_move(board, PLAYER_PIECE):
-						label = myfont.render("PLAYER 1 WINS!!", 1, RED)
+						label = myfont.render("PLAYER 1 WINS!", 1, RED)
 						screen.blit(label, (40,10))
 						game_over = True
 
@@ -281,7 +284,7 @@ while not game_over:
 			drop_piece(board, row, col, AI_PIECE)
 
 			if winning_move(board, AI_PIECE):
-				label = myfont.render("PLAYER 2 WINS!", 1, YELLOW)
+				label = myfont.render("AI WINS!", 1, YELLOW)
 				screen.blit(label, (40,10))
 				game_over = True
 
@@ -293,7 +296,7 @@ while not game_over:
 
 	# Provjera za draw
 	if not game_over and is_board_full(board):
-		label = myfont.render("IT'S A DRAW!", 1, BLACK)
+		label = myfont.render("DRAW!", 1, WHITE)
 		screen.blit(label, (40,10))
 		game_over = True
 
