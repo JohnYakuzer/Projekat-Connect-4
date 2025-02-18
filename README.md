@@ -34,7 +34,7 @@ Igra sadrzi Windows Build i Linux Build.
 >*RECOMMENDED SYSTEM REQUIREMENTS*
  - *RAM*: 128 GB RAM
  - *CPU*: AMD Ryzen™ 9950X
- - *GPU*: Nvidia Geforce RTX 4090
+ - *GPU*: Nvidia Geforce RTX 5090
  - *Disk Space*: 2 TB SSD
 
 *5. Copyright*
