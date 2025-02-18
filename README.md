@@ -32,11 +32,10 @@ Igra sadrzi Windows Build i Linux Build.
 - *Disk Space*: 30 MB HDD
   
 >*RECOMMENDED SYSTEM REQUIREMENTS*
- - *RAM*: 128 GB RAM
+ - *RAM*: 256 GB RAM
  - *CPU*: AMD Ryzen™ 9950X
  - *GPU*: Nvidia Geforce RTX 5090
- - *Disk Space*: 2 TB SSD
-
+ - *Disk Space*: 4 TB SSD
 *5. Copyright*
 >Nema ga ovo je free open source program
 
